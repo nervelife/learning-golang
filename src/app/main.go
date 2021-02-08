@@ -2,10 +2,12 @@ package main
 
 import (
 	"fmt"
-	"learning-golang/m/maxy"
 	"math/rand"
 	"reflect"
 	"time"
+
+	"github.com/nervelife/learning-golang/src/app/data"
+	"github.com/nervelife/learning-golang/src/app/server"
 )
 
 func main() {
@@ -16,6 +18,7 @@ func main() {
 	main4()
 	fmt.Println(getFourNumbers())
 	main5()
+	server.Run()
 }
 
 func main2() {
@@ -107,7 +110,7 @@ func justBreakIt(b breakble) {
 }
 
 func main5() {
-	m := maxy.Maxy{
+	m := data.Maxy{
 		Planet: "Mars",
 		Size:   8,
 	}

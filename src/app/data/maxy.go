@@ -1,4 +1,4 @@
-package maxy
+package data
 
 import "fmt"
 
